@@ -3,7 +3,7 @@
     <head>
          <meta charset="UTF-8" />
         <title>
-            Formulario Apple
+            Formulario Apple GET
         </title>    
     </head>
     <body>
@@ -24,6 +24,53 @@
         required
         />
         <button type="submit"> Buscar </button>    
+        
+        </form>
+        <h2>
+            Inicio de sesion POST
+        </h2>
+        <form
+        method="post"
+        id="loginForm"
+        target="_blank"
+        autocomplete="off"
+        novalidate
+        action="https://secure8.store.apple.com/mx/shop/signIn?ssi=4AAABmNI7xGwBIEVxOnnGV6VBcWYViM9FPKWerM_TOcCWu_2hM2kDPi9PAAAAHGh0dHBzOi8vd3d3LmFwcGxlLmNvbS9teC98fHwAAgH_5oz_VSrHkktYcuWeLOPeWexh8j_DIWnNRBKsM8yVnA"
+        onkeypress="if (event && event.keyCode == 13) Login.submitLoginRequest();"
+        >
+        <fieldset>
+        <legend>Inicio de sesión</legend>
+
+        <!-- Correo -->
+        <label for="userNameInput">Correo electrónico:</label>
+        <input
+          type="email"
+          id="userNameInput"
+          name="UserName"
+          placeholder="alguien@icloud.com"
+          spellcheck="false"
+          autocomplete="off"
+          required
+        />
+
+        <!-- Campo de contraseña -->
+        <label for="passwordInput">Contraseña:</label>
+        <input
+          type="password"
+          id="passwordInput"
+          name="Password"
+          placeholder="Contraseña"
+          autocomplete="off"
+          required
+        />
+         <!-- Botón de envío -->
+        <button
+          type="submit"
+          id="submitButton"
+        >
+          Iniciar sesión
+        </button>
+        </fieldset>
         </form>
 
 
