@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investigacion Multiple</title>
+</head>
+<body>
+    <div>
+        <h1>Investigacion etiquetas </h1> <hr>
+        <h2>Contenido</h2> 
+        <ul>
+            <li>b vs strong</li>
+            <li>i vs em</li>
+            <li>s vs del</li>
+            <li>Elementos de linea vs elementos de bloque</li>
+            <li>Formularios</li>
+        </ul> <hr>
+    </div>
+   <main>
+
+        <section id="b vs strong">
+            <h3>B vs Strong</h3>
+            <p>
+                Mientras que visualmente son iguales, ya que ambas colocan el texto en negritas.
+                Semanticamente, b, unicamente tiene efecto visual no aporta significado adicional.
+                Por su parte, strong, si comunica la importancia fuerte al texto.
+            </p>
+            <p>
+                En motores, como Google, entienden strong como enfasis y, b, 
+                lo ignoran como un estilo.
+            </p>
+            <p>
+                Ejemplo:
+            </p>
+            <b>Este texto fue escrito con b</b> <br>
+            <strong>Este texto fue escrito con strong</strong> <hr>
+        </section>
+
+        <section id="i vs em">
+            <h4>I vs Em</h4>
+            <p>
+                Ambas van a mostrar el texto en cursivas, no obstante, 
+                la primera tambien solo tendra un efecto visual(otro idioma, textos cientificos, etc). 
+                En cambio, em indica el enfasis de una palabra dentro de una oracion, incluso, se pueden anidarse
+            </p>
+            <p>
+                Los motores de busqueda y lectores de pantalla suelen marcar el enfasis de em,
+                pero no el de i
+            </p>
+            <p>
+                Ejemplo:
+            </p>
+            <i>Este texto ha sido escrito usando i</i> <br>
+            <em>Ahora, aqui usamos em</em> <hr>
+        </section>
+
+        <section id="s vs del">
+            <h5>S vs Del</h5>
+            <p>
+                Ambas muestran texto tachado. s, indica que el contenido ya no es válido o vigente, 
+                pero sigue visible. del, por su parte, indica que el contenido ha sido eliminado formalmente del documento. 
+                Incluso puede llevar atributos de fecha (datetime) y referencia (cite).
+            </p>
+            <p>
+                Los lectores de contenido suelen anunciar un texto dentro de del fue eliminado.
+                Pero no lo hacen cuando se usa s
+            </p>
+            <p>
+                Ejemplo:
+            </p>
+            <s>Este texto ha sido escrito con s</s> <br>
+            <del>Para este texto se uso del</del> <hr>
+        </section>
+
+        <section id="elementos de linea y bloque">
+            <h6>Elementos de linea y elementos de bloque</h6>
+            <h7>De Linea</h7>
+            <p>
+                Los elementos de linea se colocan dentro del flujo del texto,
+                ya que no rompen la linea, y ocupan solo el ancho necesario de su contenido.
+                Unicamente van a admitir margenes laterales
+            </p>
+            <p>
+                Por ejemplo:
+            </p>
+            <ul>
+                <li>SPAN</li>
+                <li>A</li>
+                <li>STRONG</li>
+                <li>EM</li>
+                <li>IMG</li>
+            </ul>
+            <h8>De Bloque</h8>
+            <p>
+                Siempre inician en una nueva linea, ocupan todo el ancho disponible.
+                Asi tambien, permite margenes de alto y ancho. Y se usan para estructurar
+                grandes secciones del documento.
+            </p>
+            <p>
+                Por ejemplo:
+            </p>
+            <ul>
+                <li>DIV</li>
+                <li>P</li>
+                <li>SECTION</li>
+                <li>HEADER</li>
+                <li>FOOTER</li>
+            </ul>
+            <hr>
+        </section>
+        <section id="Formularios">
+            <div>
+                <h9>Formularios</h9>
+                <p>INPUT</p>
+                <p>
+                    Es el campo mas versatil y su atributo principal, define el
+                    tipo de entrada
+                </p>
+                <p>
+                    Ejemplos de type:
+                </p>
+                <ul>
+                    <li>Text: entrada de texto corta</li>
+                    <li>Password: texto oculto</li>
+                    <li>Email: valida formato de correo</li>
+                    <li>Number: numeros con min, max y step</li>
+                    <li>Date: selector de fecha</li>
+                    <li>Radio: Opcion excluyente dentro de un grupo</li>
+                    <li>Checkbox: opcion multiple independiente</li>
+                </ul>
+            </div>
+
+            <div>
+                <p>LABEL</p>
+                <p>
+                    Asocia un texto descriptivo a un campo de formulario.
+                    Mejora la accesibilidad y experiencia de usuario, ya que permite 
+                    hacer click en el texto para activar el campo
+                </p>
+            </div>
+
+            <div>
+                <p>OUTPUT</p>
+                <p>
+                    Muestra el resultado de un calculo o accion dentro de un formulario.
+                    Tiene atributos como for para indicar cambios relacionados.
+                </p>
+            </div>
+
+            <div>
+                <p>PROGRESS</p>
+                <p>
+                    Representa visualmente el progreso de una tarea.
+                    Tiene los atributos value (progreso actual) y max (valor total).
+                    Si no se indica value, muestra un estado indeterminado
+                </p>
+
+            </div>
+
+            <div>
+                <p>SELECT</p>
+                <p>
+                    Crea un menu desplegable de opciones. Tiene atributos como 
+                    name, id, required, multiple, size, etc.
+                </p>
+
+            </div>
+
+            <div>
+                <p>OPTION</p>
+                <p>
+                    Define cada opcion dentro del select, entre sus atributos
+                    se encuentra value, selected, disabled
+                </p>
+            </div>
+
+            <div>
+                <p>TEXT - AREA</p>
+                <p>
+                    Campo para introducir texto multilinea. Algunos de sus atributos son:
+                    rows, cols, placeholder, min max - lenght, wrap, etc. Es ideal para comentarios largos
+                    o descripciones 
+                </p>
+
+            </div>
+            
+            <div>
+                <p>
+                    EJEMPLO VISUAL
+                </p>
+
+                <p>
+                    <label for="nombre">Nombre:</label>
+                    <input id="nombre" name="nombre" type="text">
+                </p>
+
+                <p>
+                    <label for="pais">País:</label>
+                    <select id="pais" name="pais">
+                        <option value="">Selecciona...</option>
+                        <option value="mx">México</option>
+                        <option value="es">España</option>
+                        <option value="ar">Argentina</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="comentarios">Comentarios:</label><br>
+                    <textarea id="comentarios" name="comentarios" rows="3" cols="30"></textarea>
+                </p>
+
+                <p>
+                    Progreso:
+                    <progress value="30" max="100"></progress>
+                </p>
+
+
+
+
+
+
+
+
+
+
+            </div>
+            <hr>
+
+        </section>
+        <footer>
+            <a href="mailto: dmarti79@itam.mx"> Dudas, escribir a dmarti79@itam.mx </a>
+        </footer>
+
+
+   </main>
+    
+</body>
+</html>
